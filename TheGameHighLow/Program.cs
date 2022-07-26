@@ -25,10 +25,9 @@ namespace TheGameHighLow
                     Console.WriteLine("Мое число больше");
                 else if (chislo > 100 || chislo < 0)
                     Console.WriteLine("Ваше число выходит за пределы");
+                else Console.WriteLine("Вы угадали число за " + hod + " кол-во ходов");
                 hod++;
             } while (chislo != rChislo);
-            if (chislo == rChislo)
-                Console.WriteLine("Вы угадали число за " + hod + " кол-во ходов");
             Console.ReadLine();
         }
     }
